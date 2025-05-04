@@ -16,7 +16,7 @@ import java.util.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/api/recipes")
+@RequestMapping("https://back-end-oo5f.onrender.com/api/recipes")
 public class RecipeController {
 
     private final RecipeService recipeService;
