@@ -28,7 +28,7 @@ public class RenderKeepAliveConfig {
                 public void run() {
                     try {
                         HttpRequest request = HttpRequest.newBuilder()
-                                .uri(URI.create("https://back-end-oo5f.onrender.com/api/ping"))
+                                .uri(URI.create("https://back-end-oo5f.onrender.com/api/config/ping"))
                                 .GET()
                                 .build();
 
