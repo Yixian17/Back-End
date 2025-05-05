@@ -44,7 +44,7 @@ public class RenderKeepAliveConfig {
                         System.err.println("Self-ping setup error: " + e.getMessage());
                     }
                 }
-            }, 0, 10 * 1000); // every 10 seconds
+            }, 0, 14 * 60 * 1000); // every 14 minutes
         };
     }
 }
