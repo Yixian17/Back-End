@@ -13,11 +13,13 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 @Configuration
+@Profile("prod")
 public class RenderKeepAliveConfig {
 
     @Bean
     public CommandLineRunner preventRenderSleep() {
         return args -> {
+            System.out.println("Keep-alive task started ✅");
             HttpClient client = HttpClient.newHttpClient();
             Timer timer = new Timer(true);
 
