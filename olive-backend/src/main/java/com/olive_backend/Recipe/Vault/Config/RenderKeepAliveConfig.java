@@ -13,7 +13,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 @Configuration
-@Profile("prod")
 public class RenderKeepAliveConfig {
 
     @Bean
